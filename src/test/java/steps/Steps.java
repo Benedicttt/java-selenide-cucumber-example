@@ -20,6 +20,7 @@ public class Steps {
 
     @When("I see title ([^']*)")
     public void title(String title) {
+        System.out.println(page.title.innerText());
         assertEquals(page.title.innerText(), title);
     }
 
